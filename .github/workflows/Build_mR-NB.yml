@@ -319,6 +319,7 @@ jobs:
           retention-days: 1
 
   Create-Combined-Release:
+    if: false  # fork CI branch only: build, never publish a release
     permissions:
       contents: write
     needs: NB-Build-and-Release
